@@ -16,14 +16,14 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common LineageOS phone.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common Havoc-OS phone.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit from trlte device
 $(call inherit-product, device/samsung/tblte/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := lineage_tblte
+PRODUCT_NAME := havoc_tblte
 PRODUCT_DEVICE := tblte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

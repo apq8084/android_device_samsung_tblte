@@ -1,2 +1,2 @@
-add_lunch_combo lineage_tblte-userdebug
+add_lunch_combo havoc_tblte-userdebug
 
