@@ -16,8 +16,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common Havoc-OS phone.
+# Inherit some common Havoc-OS stuff.
 $(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/havoc/config/telephony.mk)
 
 # Inherit from trlte device
 $(call inherit-product, device/samsung/tblte/device.mk)
