@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
 $(LOCAL_DIR)/lineage_tblte.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_tblte-user \
+    lineage_tblte-userdebug \
+    lineage_tblte-eng
