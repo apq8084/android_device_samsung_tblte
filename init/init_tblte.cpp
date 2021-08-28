@@ -104,8 +104,18 @@ void vendor_load_properties()
     if (bootloader.find("N915F") == 0) {
         /* tbltexx */
         for (const auto &source : ro_product_props_default_source_order) {
-            set_ro_product_prop(source, "fingerprint", "samsung/tbltebtu/tblte:6.0.1/MMB29M/N915FYXXS1DQH2:user/release-keys");
+            set_ro_product_prop(source, "fingerprint", "samsung/tbltexx/tblte:6.0.1/MMB29M/N915FXXS1DQH2:user/release-keys");
             set_ro_product_prop(source, "model", "SM-N915F");
+            set_ro_product_prop(source, "device", "tblte");
+            set_ro_product_prop(source, "name", "tbltexx");
+        }
+        property_override("ro.build.description", "tbltexx-user 6.0.1 MMB29M N915FXXS1DQH2 release-keys");
+        gsm_properties();
+    } else if (bootloader.find("N915FY") == 0) {
+        /* tbltebtu */
+        for (const auto &source : ro_product_props_default_source_order) {
+            set_ro_product_prop(source, "fingerprint", "samsung/tbltebtu/tblte:6.0.1/MMB29M/N915FYXXS1DQH2:user/release-keys");
+            set_ro_product_prop(source, "model", "SM-N915FY");
             set_ro_product_prop(source, "device", "tblte");
             set_ro_product_prop(source, "name", "tbltebtu");
         }
@@ -115,8 +125,8 @@ void vendor_load_properties()
         /* tbltedt */
         for (const auto &source : ro_product_props_default_source_order) {
             set_ro_product_prop(source, "fingerprint", "samsung/tbltedt/tblte:6.0.1/MMB29M/N915GDTS1DQE1:user/release-keys");
-            set_ro_product_prop(source, "device", "tblte");
             set_ro_product_prop(source, "model", "SM-N915G");
+            set_ro_product_prop(source, "device", "tblte");
             set_ro_product_prop(source, "name", "tbltedt");
         }
         property_override("ro.build.description", "tbltedt-user 6.0.1 MMB29M N915GDTS1DQE1 release-keys");

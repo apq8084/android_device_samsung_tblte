@@ -16,7 +16,7 @@
 # inherit from common tblte
 -include device/samsung/trlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := tblte,tbltedt,tbltecan,tbltespr,tbltetmo,tblteusc,tbltevzw,tbltexx
+TARGET_OTA_ASSERT_DEVICE := tblte,tbltebtu,tbltedt,tbltecan,tbltespr,tbltetmo,tblteusc,tbltevzw,tbltexx
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1600
