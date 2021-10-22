@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/tblte/tblte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/trlte/trlte-vendor.mk)
 
 # mixer_paths.xml workaround
 PRODUCT_COPY_FILES += \
@@ -32,5 +32,5 @@ PRODUCT_COPY_FILES += \
     device/samsung/tblte/releasetools/variant_blobs_hook.sh:install/bin/variant_blobs_hook.sh \
     device/samsung/trlte-common/releasetools/variant_blobs.sh:install/bin/variant_blobs.sh
 
-# common tblte
+# common trlte
 $(call inherit-product, device/samsung/trlte-common/trlte.mk)

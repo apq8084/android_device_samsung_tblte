@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common tblte
+# inherit from common trlte
 -include device/samsung/trlte-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := tblte,tbltebtu,tbltedt,tbltecan,tbltespr,tbltetmo,tblteusc,tbltevzw,tbltexx
@@ -48,4 +48,4 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/trlte-common/releasetools
 include $(COMMON_PATH)/radio/single/board.mk
 
 # inherit from the proprietary version
--include vendor/samsung/tblte/BoardConfigVendor.mk
+-include vendor/samsung/trlte/BoardConfigVendor.mk
