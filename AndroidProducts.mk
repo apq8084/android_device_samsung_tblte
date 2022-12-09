@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The havocOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/lineage_tblte.mk
+$(LOCAL_DIR)/havoc_tblte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_tblte-user \
-    lineage_tblte-userdebug \
-    lineage_tblte-eng
+    havoc_tblte-user \
+    havoc_tblte-userdebug \
+    havoc_tblte-eng
